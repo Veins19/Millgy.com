@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grains List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #fdfbfb, #ebedee);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            color: #0078d4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #0078d4;
+            color: #ffffff;
+        }
+        img {
+            width: 50px;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #0078d4;
+            color: #ffffff;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Grains Available</h2>
+        <form action="cart.html" method="post">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Grain</th>
+                        <th>Price (₹/kg)</th>
+                        <th>Discount (%)</th>
+                        <th>Add Quantity (Kg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="wheat.jfif" alt="Wheat"></td>
+                        <td>Wheat</td>
+                        <td>40</td>
+                        <td>10</td>
+                        <td><input type="number" name="wheat" min="0" placeholder="Kg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="rice.webp" alt="Rice"></td>
+                        <td>Rice</td>
+                        <td>50</td>
+                        <td>5</td>
+                        <td><input type="number" name="rice" min="0" placeholder="Kg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="buckwheat.jpg" alt="Buckwheat"></td>
+                        <td>Buckwheat</td>
+                        <td>55</td>
+                        <td>15</td>
+                        <td><input type="number" name="buckwheat" min="0" placeholder="Kg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="oat.webp" alt="Oat"></td>
+                        <td>Oat</td>
+                        <td>45</td>
+                        <td>10</td>
+                        <td><input type="number" name="oat" min="0" placeholder="Kg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="wildrice.jfif" alt="WildRice"></td>
+                        <td>Wild Rice</td>
+                        <td>60</td>
+                        <td>5</td>
+                        <td><input type="number" name="wildrice" min="0" placeholder="Kg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="rye.jpg" alt="Rye"></td>
+                        <td>Rye</td>
+                        <td>70</td>
+                        <td>5</td>
+                        <td><input type="number" name="rye" min="0" placeholder="Kg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="amaranth.jpg" alt="Amaranth"></td>
+                        <td>Amaranth</td>
+                        <td>65</td>
+                        <td>5</td>
+                        <td><input type="number" name="amaranth" min="0" placeholder="Kg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="quinoa.jfif" alt="Quinoa"></td>
+                        <td>Quinoa</td>
+                        <td>50</td>
+                        <td>5</td>
+                        <td><input type="number" name="quinoa" min="0" placeholder="Kg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="teff.jfif" alt="Teff"></td>
+                        <td>Teff</td>
+                        <td>55</td>
+                        <td>5</td>
+                        <td><input type="number" name="teff" min="0" placeholder="Kg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="barley.jfif" alt="Barley"></td>
+                        <td>Barley</td>
+                        <td>45</td>
+                        <td>10</td>
+                        <td><input type="number" name="barley" min="0" placeholder="Kg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="millet.jfif" alt="Millet"></td>
+                        <td>Millet</td>
+                        <td>30</td>
+                        <td>8</td>
+                        <td><input type="number" name="millet" min="0" placeholder="Kg"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="corn.jpg" alt="Corn"></td>
+                        <td>Corn</td>
+                        <td>45</td>
+                        <td>7</td>
+                        <td><input type="number" name="corn" min="0" placeholder="Kg"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="button-container">
+                <button type="submit">Continue to Cart</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
